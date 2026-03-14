@@ -9,7 +9,7 @@ const LoginHero = () => {
     <section className="pt-[120px] pb-[70px] lg:pt-[180px] lg:pb-[100px]">
       <div className="main-container">
         <RevealAnimation delay={0.1}>
-          <div className="mx-auto w-full max-w-[866px] overflow-hidden rounded-4xl bg-cover bg-center bg-no-repeat sm:bg-[url('/images/ns-img-375.jpg')] sm:p-[70px]">
+          <div className="mx-auto w-full max-w-[866px] overflow-hidden rounded-4xl bg-cover bg-center bg-no-repeat sm:p-[70px]">
             <RevealAnimation delay={0.1}>
               <div className="bg-background-1 dark:bg-background-6 max-w-[400px] rounded-[20px] px-8 py-14">
                 <form className="mb-6">
