@@ -28,14 +28,6 @@ const ContactUs = () => {
        
         <ContactInfo />
         <ContactMap />
-        <CTAV1
-          className="dark:bg-background-5 bg-white"
-          badgeClass="badge-yellow-v2"
-          badgeText="Get started"
-          ctaBtnText="Contact us"
-          ctaHeading="Get in touch"
-          description="We're here to help you with your inquiries and needs. Feel free to reach out to us using the contact form below, and we'll get back to you as soon as possible."
-        />
       </main>
     </>
   );

@@ -13,7 +13,7 @@ const contactInfoItems = [
     id: 1,
     icon: homeIcon,
     title: 'Our Address',
-    content: '2464 Royal Ln. Mesa, New Jersey 45463',
+    content: 'No.203,200 Feet Radial Rd,Iswarya Nagar,Nemilichery,Pallavaram,   Chennai,TamilNadu 600044',
     gradient: gradientOne,
     gradientClass: 'top-[-187px] left-[174px] -rotate-[78deg]',
   },
@@ -21,17 +21,17 @@ const contactInfoItems = [
     id: 2,
     icon: mailIcon,
     title: 'Email Us',
-    content: 'hello@nextsaaS.com',
-    link: 'mailto:hello@nextsaaS.com',
+    content: 'info@worksbot.com',
+    link: 'mailto:info@worksbot.com',
     gradient: gradientTwo,
     gradientClass: 'top-[-206px] left-[-36px] rotate-[62deg]',
   },
   {
     id: 3,
     icon: phoneIcon,
-    title: 'Call Us',
-    content: '+391 (0)35 2568 4593',
-    link: 'tel:+391035256845933',
+    title: 'Support',
+    content: 'support@worksbot.com',
+    link: 'mailto:info@worksbot.com',
     gradient: gradientThree,
     gradientClass: 'top-[-184px] left-[-185px]',
   },
@@ -47,13 +47,7 @@ const ContactInfo = () => {
           {/* heading  */}
           <div className="mx-auto max-w-[680px] space-y-3 text-center">
             <RevealAnimation delay={0.2}>
-              <h2>Reach out to our support team for help.</h2>
-            </RevealAnimation>
-            <RevealAnimation delay={0.3}>
-              <p>
-                Whether you have a question, need technical assistance, or just want some guidance, our support team is
-                here to help. We&apos;re available around the clock to provide quick and friendly support.
-              </p>
+              <h2>Reach out to our support team</h2>
             </RevealAnimation>
           </div>
           <div className="flex flex-col items-center justify-center gap-10 lg:flex-row lg:items-start lg:gap-8 xl:gap-[70px]">
