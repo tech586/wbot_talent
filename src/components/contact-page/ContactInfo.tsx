@@ -81,7 +81,7 @@ const ContactInfo = () => {
             {/* contact form  */}
             <RevealAnimation
               delay={0.3}
-              className="dark:bg-background-6 mx-auto w-full max-w-[847px] rounded-4xl bg-white p-6 md:p-8 lg:p-11">
+              className="dark:bg-background-6 mx-auto w-full max-w-[847px] rounded-sm bg-white p-6 md:p-8 lg:p-11">
               <form action="#" method="POST" className="space-y-8">
                 {/* name and phone number  */}
                 <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
@@ -99,7 +99,7 @@ const ContactInfo = () => {
                       placeholder="Enter your name"
                       required={true}
                       autoComplete="name"
-                      className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
+                      className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-sm border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
                     />
                   </div>
                   {/* number */}
@@ -116,7 +116,7 @@ const ContactInfo = () => {
                       placeholder="Enter your number"
                       required={true}
                       autoComplete="tel"
-                      className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
+                      className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-sm border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
                     />
                   </div>
                 </div>
@@ -132,7 +132,7 @@ const ContactInfo = () => {
                     placeholder="Enter your email"
                     required={true}
                     autoComplete="email"
-                    className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
+                    className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-sm border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
                   />
                 </div>
                 {/* subject  */}
@@ -146,7 +146,7 @@ const ContactInfo = () => {
                     name="subject"
                     placeholder="Enter your subject"
                     required={true}
-                    className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
+                    className="dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 dark:bg-background-6 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent h-[48px] w-full rounded-sm border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
                   />
                 </div>
                 {/* message */}
