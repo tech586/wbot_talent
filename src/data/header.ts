@@ -6,6 +6,65 @@ export interface MegaMenuItems {
   newPage?: boolean;
 }
 
+export interface NavigationItem {
+  id: string;
+  label: string;
+  href?: string;
+  hasDropdown: boolean;
+  megaMenuComponent?: string;
+}
+
+
+export interface MegaMenuItem {
+  id: string;
+  label: string;
+  href: string;
+  newPage?: boolean;
+}
+export interface MegaMenuItems {
+  id: string;
+  label: string;
+  href: string;
+  description: string;
+  newPage?: boolean;
+}
+
+export interface MegaMenuColumn {
+  id: string;
+  items: MegaMenuItem[];
+}
+
+export const navigationItems: NavigationItem[] = [
+
+  {
+    id: 'Our Company',
+    label: 'Our Company',
+    href: '#',
+    hasDropdown: true,
+    megaMenuComponent: 'AboutMenu',
+  },
+  {
+    id: 'services',
+    label: 'Services',
+    href: '#',
+    hasDropdown: true,
+    megaMenuComponent: 'ServicesMenu',
+  },
+  {
+    id: 'Careers',
+    label: 'Careers',
+    href: '/career',
+    hasDropdown: false,
+  },
+];
+
+// About Menu Data
+export const aboutMenuItems: MegaMenuItem[] = [
+  {id: 'about', label: 'About', href: '/page-about' },
+  { id: 'Blogs', label: 'Blogs', href: '/blogs'}, 
+  { id: 'Contact Us', label: 'Contact Us', href: '/contact-us' },
+];
+
 
 // Services Menu Data
 export const servicesMenuItems: MegaMenuItems[] = [
@@ -71,3 +130,17 @@ export const servicesMenuItems: MegaMenuItems[] = [
     description: 'Advanced chip design and verification services'
   },
 ];
+
+
+export const headerConfig = {
+  logo: {
+    alt: 'Wotksbot',
+    mainLogoPath: '@public/images/shared/main-logo.svg',
+    logoPath: '@public/images/shared/logo.svg',
+    logoDarkPath: '@public/images/shared/logo-dark.svg',
+  },
+  cta: {
+    label: 'Get started',
+    href: '/signup-01',
+  },
+};

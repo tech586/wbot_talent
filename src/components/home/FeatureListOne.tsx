@@ -57,7 +57,7 @@ const FeatureListOne = () => {
         <div>
           <LinkButton
             href="/signup"
-            className="btn btn-white btn-lg sm:btn-xl dark:btn-transparent hover:btn-secondary dark:hover:btn-accent w-full sm:w-auto">
+            className="rounded-sm btn btn-white btn-lg sm:btn-xl dark:btn-transparent hover:btn-secondary dark:hover:btn-accent w-full sm:w-auto">
             Get started
           </LinkButton>
         </div>

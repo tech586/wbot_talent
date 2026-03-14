@@ -1,5 +1,6 @@
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import NavCTAButton from '../shared/navbar/NavCTAButton';
 
 const HeroContent = () => {
   return (
@@ -26,7 +27,7 @@ const HeroContent = () => {
           <li>
             <LinkButton
               href="/login"
-              className="btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
+              className="rounded-sm btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-secondary dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
               Start Hiring Talent
             </LinkButton>
           </li>
@@ -35,7 +36,7 @@ const HeroContent = () => {
           <li>
             <LinkButton
               href="/signup"
-              className="btn btn-white max-md:btn-md btn-xl hover:btn-secondary dark:btn-transparent dark:hover:btn-accent w-full max-md:mx-auto md:w-auto">
+              className="rounded-sm btn btn-white max-md:btn-md btn-xl hover:btn-secondary dark:btn-transparent dark:hover:btn-accent w-full max-md:mx-auto md:w-auto">
               Book a Consultation
             </LinkButton>
           </li>

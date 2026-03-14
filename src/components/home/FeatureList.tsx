@@ -107,7 +107,7 @@ const FeatureList = () => {
           <div className="flex items-center justify-center">
             <LinkButton
               href="/contact-us"
-              className="btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
+              className="rounded-sm btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-secondary dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
               Talk to an expert
             </LinkButton>
           </div>

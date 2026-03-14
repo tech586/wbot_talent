@@ -102,7 +102,7 @@ const Hero = () => {
                   <button
                     onClick={() => window.open("https://calendly.com/hsohtnas3/30min", "_blank")}
                     type="button"
-                    className="btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto"
+                    className="rounded-sm btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-secondary dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto"
                   >
                     <span>Book a strategy call</span>
                   </button>

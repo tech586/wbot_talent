@@ -14,6 +14,7 @@ import MobileMenu from '../mobile-menu/MobileMenu';
 import CompanyMenu from './CompanyMenu';
 import MobileMenuButton from './MobileMenuButton';
 import ResourcesMenu from './ResourcesMenu';
+import NavCTAButton from './NavCTAButton';
 
 const Navbar = () => {
   const { isScrolled } = useNavbarScroll(150);
@@ -104,12 +105,12 @@ const Navbar = () => {
                 </li>
               </ul>
             </nav>
-            <div className="hidden items-center justify-center xl:flex">
-              <Link
-                href="/signup"
-                className="btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
-                <span>Get started</span>
-              </Link>
+             <div className="flex items-center gap-2">
+                <NavCTAButton
+                  href="/signup"
+                  btnClassName={cn('btn btn-secondary btn-md rounded-sm')}
+                  label="Get started"
+                />
             </div>
             <MobileMenuButton />
           </div>

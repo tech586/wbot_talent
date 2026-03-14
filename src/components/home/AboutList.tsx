@@ -3,6 +3,7 @@ import aboutBg from '@public/images/ns-img-14.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import NavCTAButton from '../shared/navbar/NavCTAButton';
 
 // About list data
 const aboutListData = [
@@ -36,7 +37,7 @@ const AboutList = () => {
             <h5 className="text-accent max-sm:text-heading-6 mb-8">
               We support businesses at every stage of workforce expansion
             </h5>
-            <LinkButton href="/signup" className="btn btn-md btn-white hover:btn-white-dark">
+            <LinkButton href="/signup" className="rounded-sm btn max-md:btn-md  dark:btn-accent btn-secondary hover:btn-secondary dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
               Get started
             </LinkButton>
           </div>
