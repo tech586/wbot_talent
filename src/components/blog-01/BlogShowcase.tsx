@@ -1,4 +1,4 @@
-import { IBlogPost } from '@/interface';
+import { IBlogPost } from '../interface';
 import getMarkDownData from '@/utils/getMarkDownData';
 import RevealAnimation from '../animation/RevealAnimation';
 import BlogPaginationWrapper from './BlogPaginationWrapper';

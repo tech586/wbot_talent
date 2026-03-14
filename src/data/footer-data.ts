@@ -1,6 +1,15 @@
-import { FooterData } from '../../interface';
+interface FooterLink {
+  label: string;
+  href: string;
+}
 
-export const footerLinks: FooterData[] = [
+interface FooterSection {
+  title: string;
+  links: FooterLink[];
+}
+
+
+export const footerLinks: FooterSection[] = [
   {
     title: 'Company',
     links: [

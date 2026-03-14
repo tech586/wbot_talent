@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import RevealAnimation from '../animation/RevealAnimation';
+import RevealAnimation from '@/components/animation/RevealAnimation';
 
 const Contact = () => {
   return (

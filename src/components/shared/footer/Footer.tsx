@@ -10,6 +10,10 @@ import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle';
 import FooterDivider from './FooterDivider';
 
+
+
+
+
 const Footer = ({ className }: { className?: string }) => {
   return (
     <footer className={cn('relative z-0 overflow-hidden', className)}>
