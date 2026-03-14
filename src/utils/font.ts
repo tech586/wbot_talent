@@ -1,10 +1,19 @@
-import { Inter_Tight } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 
-const interTight = Inter_Tight({
+// 2. KEEP the export name 'interTight' 
+// so your layout.tsx file doesn't break.
+const interTight = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-interTight',
+  // 3. KEEP the CSS variable name '--font-interTight' 
+  // so your CSS/Tailwind config doesn't need updating.
+  variable: '--font-interTight', 
   display: 'swap',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  // 4. Set the Poppins weights you need. 
+  // Poppins does not have 100-900 like Inter_Tight, so adjust if necessary, 
+  // but we'll include the common weights to cover the range you had.
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export { interTight };
+
+
