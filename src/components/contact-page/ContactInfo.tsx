@@ -184,7 +184,7 @@ const ContactInfo = () => {
                 {/* submit button */}
                 <button
                   type="submit"
-                  className="btn btn-md btn-secondary hover:btn-primary dark:btn-accent w-full first-letter:uppercase before:content-none">
+                  className="rounded-sm btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-secondary dark:hover:btn-transparent w-full">
                   Submit
                 </button>
               </form>
