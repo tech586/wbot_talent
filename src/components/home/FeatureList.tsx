@@ -40,14 +40,14 @@ const featuresData: Feature[] = [
   },
    {
     id: '5',
-    icon: 'ns-shape-40',
+    icon: 'ns-shape-43',
     title: 'Easy deployment & recovery',
     ours: true,
     description: 'Enterprise focused',
   },
    {
     id: '6',
-    icon: 'ns-shape-40',
+    icon: 'ns-shape-38',
     title: 'Local India compliance expertise',
     ours: true,
     description: 'Generic global coverage',
