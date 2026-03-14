@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "quote": "The platform's intuitive interface and powerful features have revolutionized our workflow. Customer support has been exceptional every step of the way.",
+    "avatar": "/images/ns-avatar-1.png",
+    "name": "Technology & SaaS",
+    "position": "Marketing Director",
+    "rating": "4.9"
+  },
+  {
+    "id": 2,
+    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.",
+    "avatar": "/images/ns-avatar-2.png",
+    "name": "Artificial Intelligence",
+    "position": "Tech Lead",
+    "rating": "5.0"
+  },
+  {
+    "id": 3,
+    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.  ",
+    "avatar": "/images/ns-avatar-3.png",
+    "name": "Fintech",
+    "position": "Operations Manager",
+    "rating": "4.8"
+  },
+  {
+    "id": 4,
+    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.",
+    "avatar": "/images/ns-avatar-4.png",
+    "name": "E-commerce",
+    "position": "Software Manager",
+    "rating": "3.8"
+  },
+  {
+    "id": 5,
+    "quote": "I appreciate the real-time analytics and customizable dashboards. It has made tracking our KPIs so much easier and more insightful.",
+    "avatar": "/images/ns-avatar-5.png",
+    "name": "Healthcare Technology",
+    "position": "Data Analyst",
+    "rating": "4.7"
+  },
+  {
+    "id": 6,
+    "quote": "From onboarding to daily use, the experience has been smooth and intuitive. Our team collaboration has improved significantly.",
+    "avatar": "/images/ns-avatar-6.png",
+    "name": "EdTech",
+    "position": "Project Coordinator",
+    "rating": "4.6"
+  }
+
+]

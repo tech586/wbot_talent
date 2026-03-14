@@ -1,0 +1,46 @@
+[
+    {
+        "id":1,
+        "name":"Programming Languages",
+        "technologies":["Python", "Java","JavaScript","TypeScript","Go","C++","PHP"]
+    },
+    {
+        "id":2,
+        "name":"Frontend Development",
+        "technologies":["React","Angular","Vue.js","Next.js"]
+    },
+     {
+        "id":3,
+        "name":"Cloud Platforms",
+        "technologies":["AWS","Google Cloud","Microsoft Azure"]
+    },
+     {
+        "id":4,
+        "name":"Data & Artificial Intelligence",
+        "technologies":["Machine Learning",
+                            "Deep Learning",
+                            "Data Engineering",
+                            "Natural Language Processing",
+                            "Data Analytics"
+                            ]
+    },
+     {
+        "id":5,
+        "name":"DevOps & Infrastructure",
+        "technologies":["Docker",
+                            "Kubernetes",
+                            "Terraform",
+                            "CI/CD Pipelines"
+                            ]
+    },
+    {
+        "id":6,
+        "name":"Backend Development",
+        "technologies":["Node.js",
+                            "Django",
+                            "Spring Boot",
+                            "Laravel"
+                            ]
+    }
+
+]
