@@ -1,7 +1,6 @@
 import { cn } from '@/utils/cn';
 import compare from '@public/images/comparison/comparison.jpg';
 import Gradient42 from '@public/images/ns-img-530.png';
-import saas from '@public/images/comparison/saas.avif'
 import Image from 'next/image';
 import RevealAnimation from './animation/RevealAnimation';
 import FeatureList from './home/FeatureList';
@@ -16,32 +15,32 @@ const featureList = [
   {
     id: '2',
     title: 'Artificial Intelligence',
-    icon: '/images/comparison/saas.avif',
+    icon: '/images/comparison/AI.jpg',
     description: 'Companies developing AI models, machine learning platforms, and automation solutions.',
   },
     {
     id: '3',
     title: 'Fintech',
-    icon: '/images/comparison/saas.avif',
+    icon: '/images/comparison/fintech.jpg',
     description: 'Financial technology organizations building digital payment systems, banking platforms, and fintech applications.',
   },
   {
     id: '4',
     title: 'E-commerce',
-    icon: '/images/comparison/saas.avif',
+    icon: '/images/comparison/ecommerce.jpg',
     description: 'Online businesses developing scalable platforms and customer experiance solutions.',
   },
   {
     id: '5',
     title: 'Healthcare Technology',
-    icon: '/images/comparison/saas.avif',
+    icon: '/images/comparison/healthcare.jpg',
     description: 'Health Tech companies building digital healthcare systems and telemedicine platforms.',
   },
   {
     id: '6',
-    title: 'Healthcare Technology',
-    icon: '/images/comparison/saas.avif',
-    description: 'Health Tech companies building digital healthcare systems and telemedicine platforms.',
+    title: 'edutech',
+    icon: '/images/comparison/edutech.jpg',
+    description: 'Education technology companies developing learning management systems and digital education platforms.',
   },
 ];
 
