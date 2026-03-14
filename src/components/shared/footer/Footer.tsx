@@ -7,7 +7,6 @@ import logoDark from '@public/images/shared/main-logo.png';
 import logo from '@public/images/shared/main-logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import ThemeToggle from '../ThemeToggle';
 import FooterDivider from './FooterDivider';
 
 
@@ -88,7 +87,6 @@ const Footer = ({ className }: { className?: string }) => {
           </RevealAnimation>
         </div>
       </div>
-      <ThemeToggle />
     </footer>
   );
 };
