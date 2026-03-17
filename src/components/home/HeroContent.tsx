@@ -27,7 +27,7 @@ const HeroContent = () => {
           <li>
             <LinkButton
               href="/login"
-              className="rounded-sm btn max-md:btn-md btn-xl dark:btn-accent btn-secondary hover:btn-secondary dark:hover:btn-transparent w-full max-md:mx-auto md:w-auto">
+              className="rounded-sm btn max-md:btn-md btn-xl btn-secondary w-full max-md:mx-auto md:w-auto cursor-pointer">
               Start Hiring Talent
             </LinkButton>
           </li>
@@ -36,7 +36,7 @@ const HeroContent = () => {
           <li>
             <LinkButton
               href="/signup"
-              className="rounded-sm btn btn-white max-md:btn-md btn-xl hover:btn-secondary dark:btn-transparent dark:hover:btn-accent w-full max-md:mx-auto md:w-auto">
+              className="rounded-sm btn btn-white max-md:btn-md btn-xl w-full max-md:mx-auto md:w-auto cursor-pointer">
               Book a Consultation
             </LinkButton>
           </li>

@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative z-10 pt-[160px] pb-[140px] max-[641px]:pb-16 max-[426px]:pb-10 sm:pt-[280px]">
         {/* <HeroShapes /> */}
          {/*  RIPPLE GRID BACKGROUND */}
-      <div className="absolute inset-0 z-1">
+      <div className="absolute inset-0 z-1 pointer-events-none">
         <BackgroundRippleEffect />
       </div>
 
