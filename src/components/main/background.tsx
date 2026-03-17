@@ -3,9 +3,9 @@ import React, { useMemo, useRef, useState } from "react";
 import { cn } from "../lib/utils";
 
 export const BackgroundRippleEffect = ({
-  rows = 8,
-  cols = 27,
-  cellSize = 80,
+  rows = 7,
+  cols = 30,
+  cellSize = 56,
 }: {
   rows?: number;
   cols?: number;
@@ -70,7 +70,7 @@ const DivGrid = ({
   className,
   rows = 7,
   cols = 30,
-  cellSize = 80,
+  cellSize = 56,
   borderColor = "#3f3f46",
   fillColor = "rgba(14,165,233,0.3)",
   clickedCell = null,
@@ -82,17 +82,19 @@ const DivGrid = ({
     [rows, cols],
   );
 
+  const gap = 20;
   const gridStyle: React.CSSProperties = {
     display: "grid",
     gridTemplateColumns: `repeat(${cols}, ${cellSize}px)`,
     gridTemplateRows: `repeat(${rows}, ${cellSize}px)`,
-    width: cols * cellSize,
-    height: rows * cellSize,
+    width: cols * cellSize + (cols - 1) * gap,
+    height: rows * cellSize + (rows - 1) * gap,
     marginInline: "auto",
+    gap: `${gap}px`,
   };
 
   return (
-    <div className={cn("relative z-[3]", className)} style={gridStyle}>
+    <div className={cn("relative z-[1] pointer-events-none", className)} style={gridStyle}>
       {cells.map((idx) => {
         const rowIdx = Math.floor(idx / cols);
         const colIdx = idx % cols;
