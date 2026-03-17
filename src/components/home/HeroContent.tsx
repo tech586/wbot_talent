@@ -36,7 +36,7 @@ const HeroContent = () => {
           <li>
             <LinkButton
               href="/signup"
-              className="rounded-sm btn btn-white max-md:btn-md btn-xl w-full max-md:mx-auto md:w-auto cursor-pointer">
+              className="rounded-sm btn btn-white btn-lg sm:btn-xl dark:btn-transparent hover:btn-secondary dark:hover:btn-accent w-full sm:w-auto">
               Book a Consultation
             </LinkButton>
           </li>
