@@ -34,6 +34,9 @@ const ScrollingAppsShowcase: React.FC = () => {
     { img: "/images/technologies/cloud platforms/aws.png", alt: "aws" },
     { img: "/images/technologies/cloud platforms/azure.png", alt: "azure" },
     { img: "/images/technologies/cloud platforms/google cloud.png", alt: "google cloud" },
+    { img: "/images/technologies/cloud platforms/aws.png", alt: "aws" },
+    { img: "/images/technologies/cloud platforms/azure.png", alt: "azure" },
+    { img: "/images/technologies/cloud platforms/google cloud.png", alt: "google cloud" },
  
   ];
 
@@ -67,12 +70,12 @@ const ScrollingAppsShowcase: React.FC = () => {
     return (
       <li
         className={`
-          rounded-t-full overflow-hidden bg-amber-100
+          rounded-full overflow-hidden bg-amber-100
           flex items-center justify-center
           
           min-w-[85px] w-[85px] h-[85px]     /* ✅ Mobile */
-          md:min-w-[110px] md:w-[110px] md:h-[110px]  /* ✅ Tablet */
-          lg:min-w-[130px] lg:w-[130px] lg:h-[130px]  /* ✅ Desktop */
+          md:min-w-[90px] md:w-[90px] md:h-[90px]  /* ✅ Tablet */
+          lg:min-w-[110px] lg:w-[110px] lg:h-[110px]  /* ✅ Desktop */
 
           ${large ? "mx-2 md:mx-3 lg:mx-4" : "mx-2 md:mx-4"}
         `}
