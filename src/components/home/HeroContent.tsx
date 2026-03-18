@@ -16,7 +16,7 @@ const HeroContent = () => {
         </h1>
       </RevealAnimation>
       <RevealAnimation delay={0.3}>
-        <p className="mb-10 max-w-[625px] max-sm:max-w-[420px] sm:mb-14">
+        <p className="mb-10 max-w-[625px] max-sm:max-w-[420px] sm:mb-14 text-black dark:text-gray-100">
        Worksbot Talent helps Indian and global companies hire, onboard, and manage skilled technology professionals with end-to-end recruitment, Employer of Record (EOR), payroll management, and workforce support.
        Whether you want to hire Indian tech talent or scale your team quickly, Worksbot Talent simplifies global hiring and workforce management.
 
