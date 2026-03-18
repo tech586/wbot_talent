@@ -54,7 +54,7 @@ const NavbarThree = ({ btnClassName }: { btnClassName?: string }) => {
               </nav>
               <div className="flex items-center gap-2">
                 <NavCTAButton
-                  href="/signup-01"
+                  href="/signup"
                   btnClassName={cn('btn btn-secondary btn-md rounded-sm')}
                   label="Get started"
                 />

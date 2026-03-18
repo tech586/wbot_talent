@@ -55,7 +55,7 @@ const SignupHero = () => {
                   <div className="mt-8">
                     <button
                       type="submit"
-                      className="btn btn-md hover:btn-secondary dark:hover:btn-accent btn-primary w-full first-letter:uppercase before:content-none">
+                      className="rounded-sm btn max-md:btn-md btn-xl btn-secondary w-full max-md:mx-auto md:w-auto cursor-pointer">
                       Sign up
                     </button>
                   </div>

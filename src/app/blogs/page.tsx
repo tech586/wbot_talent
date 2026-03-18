@@ -17,14 +17,7 @@ const BlogPage01 = () => {
       <main className="bg-background-3 dark:bg-background-7">
         <FeaturedBlog />
         <BlogShowcase />
-        <CTAV1
-          className="dark:bg-background-5 bg-white"
-          badgeClass="!badge-yellow-v2"
-          badgeText="Get started"
-          ctaHeading="Build a complete website using the assistance"
-          description="Start your free trial today and see your ideas come to life easily and creatively."
-          ctaBtnText="Get started"
-        />
+        
       </main>
     </>
   );
