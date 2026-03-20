@@ -3,8 +3,8 @@ import React, { useMemo, useRef, useState } from "react";
 import { cn } from "../lib/utils";
 
 export const BackgroundRippleEffect = ({
-  rows = 7,
-  cols = 30,
+  rows = 8,
+  cols = 27,
   cellSize = 56,
 }: {
   rows?: number;
@@ -23,7 +23,7 @@ export const BackgroundRippleEffect = ({
       ref={ref}
       className={cn(
         "absolute inset-0 h-full w-full",
-        "[--cell-border-color:var(--color-neutral-300)] [--cell-fill-color:var(--color-neutral-100)] [--cell-shadow-color:var(--color-neutral-500)]",
+        "[--cell-border-color:var(--color-neutral-400)] [--cell-fill-color:var(--color-neutral-100)] [--cell-shadow-color:var(--color-neutral-500)]",
         "dark:[--cell-border-color:var(--color-neutral-700)] dark:[--cell-fill-color:var(--color-neutral-900)] dark:[--cell-shadow-color:var(--color-neutral-800)]",
       )}
     >
@@ -82,19 +82,17 @@ const DivGrid = ({
     [rows, cols],
   );
 
-  const gap = 20;
   const gridStyle: React.CSSProperties = {
     display: "grid",
     gridTemplateColumns: `repeat(${cols}, ${cellSize}px)`,
     gridTemplateRows: `repeat(${rows}, ${cellSize}px)`,
-    width: cols * cellSize + (cols - 1) * gap,
-    height: rows * cellSize + (rows - 1) * gap,
+    width: cols * cellSize,
+    height: rows * cellSize,
     marginInline: "auto",
-    gap: `${gap}px`,
   };
 
   return (
-    <div className={cn("relative z-[1] pointer-events-none", className)} style={gridStyle}>
+    <div className={cn("relative z-[3]", className)} style={gridStyle}>
       {cells.map((idx) => {
         const rowIdx = Math.floor(idx / cols);
         const colIdx = idx % cols;
@@ -122,7 +120,7 @@ const DivGrid = ({
             style={{
               backgroundColor: fillColor,
               borderColor: borderColor,
-              transform: "rotate(45deg)",
+               transform: "rotate(45deg)",
               ...style,
             }}
             onClick={

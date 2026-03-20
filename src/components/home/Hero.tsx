@@ -43,15 +43,18 @@ const Hero = () => {
 
       <div className="relative z-10 pt-[60px] pb-[140px] max-[641px]:pb-20 max-[426px]:pb-15 sm:pt-[120px]">
         {/* <HeroShapes /> */}
-         {/*  RIPPLE GRID BACKGROUND */}
-      {/* <div className="absolute inset-0 z-1 pointer-events-none">
-        <BackgroundRippleEffect />
-      </div> */}
 
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-            {/* Left: Hero Content */}
-            <HeroContent />
+            {/* Left: Hero Content with Ripple Effect */}
+            <div className="relative">
+              <div className="absolute inset-0 z-0 pointer-events-none">
+                <BackgroundRippleEffect />
+              </div>
+              <div className="relative z-10">
+                <HeroContent />
+              </div>
+            </div>
             
             {/* Right: Hero Images with Scrolling Animation */}
             <div className="hidden lg:block">
