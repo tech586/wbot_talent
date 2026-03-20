@@ -41,7 +41,7 @@ const Hero = () => {
       {/* <div className="absolute inset-0 z-1 bg-gradient-to-b from-white via-white/30 to-white/20 dark:from-black/50 dark:via-black/40 dark:to-black/30" />
       <div className="absolute inset-0 z-1 bg-black/12 dark:bg-black/50" /> */}
 
-      <div className="relative z-10 pt-[60px] pb-[140px] max-[641px]:pb-20 max-[426px]:pb-15 sm:pt-[140px]">
+      <div className="relative z-10 pt-[60px] pb-[140px] max-[641px]:pb-20 max-[426px]:pb-15 sm:pt-[120px]">
         {/* <HeroShapes /> */}
          {/*  RIPPLE GRID BACKGROUND */}
       {/* <div className="absolute inset-0 z-1 pointer-events-none">
@@ -63,49 +63,49 @@ const Hero = () => {
                     alt="Hero image 1"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g2.png"
                     alt="Hero image 2"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g3.png"
                     alt="Hero image 3"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g4.png"
                     alt="Hero image 4"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g5.png"
                     alt="Hero image 5"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g6.png"
                     alt="Hero image 6"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g7.png"
                     alt="Hero image 7"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   
                   {/* Duplicate set for seamless loop */}
@@ -114,49 +114,49 @@ const Hero = () => {
                     alt="Hero image 1"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g2.png"
                     alt="Hero image 2"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g3.png"
                     alt="Hero image 3"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g4.png"
                     alt="Hero image 4"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g5.png"
                     alt="Hero image 5"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g6.png"
                     alt="Hero image 6"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                   <Image
                     src="/images/hero1/g7.png"
                     alt="Hero image 7"
                     width={400}
                     height={300}
-                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0 border-2 border-gray-500"
                   />
                 </div>
               </div>
