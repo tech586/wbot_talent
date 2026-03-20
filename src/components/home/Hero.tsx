@@ -5,6 +5,7 @@ import HeroContent from './HeroContent';
 // import HeroShapes from './HeroShapes';
 import { BackgroundRippleEffect } from '../main/background';
 import Image from 'next/image';
+import DotDistortionBackground from './BackgroundHover';
 
 const Hero = () => {
   const sceneRef = useParallaxEffect();
@@ -49,7 +50,7 @@ const Hero = () => {
             {/* Left: Hero Content with Ripple Effect */}
             <div className="relative">
               <div className="absolute inset-0 z-0 pointer-events-none">
-                <BackgroundRippleEffect />
+                <DotDistortionBackground />
               </div>
               <div className="relative z-10">
                 <HeroContent />
