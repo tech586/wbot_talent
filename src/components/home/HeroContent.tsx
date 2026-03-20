@@ -4,19 +4,19 @@ import NavCTAButton from '../shared/navbar/NavCTAButton';
 
 const HeroContent = () => {
   return (
-    <div className="main-container z-10 flex flex-col items-center text-center">
+    <div className="main-container z-10 flex flex-col items-start text-left">
       <RevealAnimation delay={0.1}>
         <span className="px-3 py-1.5 text-[11px] sm:px-4 sm:py-2 sm:text-sm md:px-5 md:py-2 rounded-full font-medium tracking-wide bg-primary-50 text-primary-600 border border-primary-600 text-center mb-5">Build and Manage High Performing Tech Teams Globally</span>
       </RevealAnimation>
       <RevealAnimation delay={0.2}>
-        <h1 className="max-[426px]:text-heading-5 max-sm:text-heading-4 mb-4 font-medium max-[426px]:mb-2.5 max-sm:max-w-[450px]">
+        <h1 className="max-[426px]:text-heading-5 max-sm:text-heading-4 mb-4 font-medium max-[426px]:mb-2.5 max-sm:max-w-[450px] text-white">
           Global Tech Hiring and 
           <br className="hidden md:block" />
          <span className='text-red-500'>Workforce Management</span> 
         </h1>
       </RevealAnimation>
       <RevealAnimation delay={0.3}>
-        <p className="mb-10 max-w-[625px] max-sm:max-w-[420px] sm:mb-14 text-black dark:text-gray-100">
+        <p className="mb-10 max-w-[625px] max-sm:max-w-[420px] sm:mb-14 text-white dark:text-gray-100">
        Worksbot Talent helps Indian and global companies hire, onboard, and manage skilled technology professionals with end-to-end recruitment, Employer of Record (EOR), payroll management, and workforce support.
        Whether you want to hire Indian tech talent or scale your team quickly, Worksbot Talent simplifies global hiring and workforce management.
 
