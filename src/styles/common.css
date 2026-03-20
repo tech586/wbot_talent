@@ -25,6 +25,21 @@ Common Styles all over the sites
   scrollbar-width: none;
 }
 
+/* ==========HERO SCROLL ANIMATION========== */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-up {
+  animation: scroll-up linear infinite;
+  animation-duration: 30s;
+}
+
 /* ==========FOOTER========== */
 .footer-link {
   @apply text-tagline-1 max-[426px]:text-tagline-2 text-primary-50 relative inline-block overflow-hidden font-normal before:absolute before:bottom-0 before:left-0 before:h-px before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-500 before:content-[''] hover:before:origin-left hover:before:scale-x-100 dark:before:bg-white;

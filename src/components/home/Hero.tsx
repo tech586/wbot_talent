@@ -4,6 +4,7 @@ import { useParallaxEffect } from '@/hooks/useParallaxEffect';
 import HeroContent from './HeroContent';
 // import HeroShapes from './HeroShapes';
 import { BackgroundRippleEffect } from '../main/background';
+import Image from 'next/image';
 
 const Hero = () => {
   const sceneRef = useParallaxEffect();
@@ -13,7 +14,7 @@ const Hero = () => {
       ref={sceneRef}
       className="dark:bg-background-8 relative z-0 overflow-hidden bg-white pb-14 sm:pb-0 md:-mb-10 lg:-mb-12"
       id="scene">
-         <video
+         {/* <video
           className="absolute top-0 left-0 size-full min-h-[100%] scale-[1.1] object-cover object-center"
           autoPlay={true}
           muted={true}
@@ -27,7 +28,7 @@ const Hero = () => {
             label="English Descriptions"
           />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
       {/* Background Image */}
       {/* <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -40,14 +41,128 @@ const Hero = () => {
       {/* <div className="absolute inset-0 z-1 bg-gradient-to-b from-white via-white/30 to-white/20 dark:from-black/50 dark:via-black/40 dark:to-black/30" />
       <div className="absolute inset-0 z-1 bg-black/12 dark:bg-black/50" /> */}
 
-      <div className="relative z-10 pt-[100px] pb-[140px] max-[641px]:pb-20 max-[426px]:pb-15 sm:pt-[200px]">
+      <div className="relative z-10 pt-[60px] pb-[140px] max-[641px]:pb-20 max-[426px]:pb-15 sm:pt-[140px]">
         {/* <HeroShapes /> */}
          {/*  RIPPLE GRID BACKGROUND */}
       {/* <div className="absolute inset-0 z-1 pointer-events-none">
         <BackgroundRippleEffect />
       </div> */}
 
-        <HeroContent />
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left: Hero Content */}
+            <HeroContent />
+            
+            {/* Right: Hero Images with Scrolling Animation */}
+            <div className="hidden lg:block">
+              <div className="relative h-[600px] overflow-hidden rounded-lg">
+                <div className="flex flex-col gap-4 animate-scroll-up">
+                  {/* First set of images */}
+                  <Image
+                    src="/images/hero1/g1.png"
+                    alt="Hero image 1"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g2.png"
+                    alt="Hero image 2"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g3.png"
+                    alt="Hero image 3"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g4.png"
+                    alt="Hero image 4"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g5.png"
+                    alt="Hero image 5"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g6.png"
+                    alt="Hero image 6"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g7.png"
+                    alt="Hero image 7"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  
+                  {/* Duplicate set for seamless loop */}
+                  <Image
+                    src="/images/hero1/g1.png"
+                    alt="Hero image 1"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g2.png"
+                    alt="Hero image 2"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g3.png"
+                    alt="Hero image 3"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g4.png"
+                    alt="Hero image 4"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g5.png"
+                    alt="Hero image 5"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g6.png"
+                    alt="Hero image 6"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                  <Image
+                    src="/images/hero1/g7.png"
+                    alt="Hero image 7"
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
