@@ -22,9 +22,18 @@ export default function DotDistortionBackground() {
 
     const gap = 12;
     const dots: any[] = [];
+    const diagonalStripeWidth = 40; // Width of each diagonal stripe
 
     for (let x = 0; x < canvas.width; x += gap) {
       for (let y = 0; y < canvas.height; y += gap) {
+        // Create multiple diagonal stripes with varying opacity
+        const diagonalPos = (x + y) % diagonalStripeWidth;
+        const stripeIndex = Math.floor((x + y) / diagonalStripeWidth) % 4;
+        
+        // Different opacity levels for each diagonal stripe
+        const opacityLevels = [0.95, 0.65, 0.35, 0.15];
+        const baseOpacity = opacityLevels[stripeIndex];
+        
         dots.push({
           x,
           y,
@@ -34,7 +43,7 @@ export default function DotDistortionBackground() {
           vy: 0,
           size: 0.8,
           baseSize: 0.8,
-          baseOpacity: 0.3 + Math.random() * 0.7,
+          baseOpacity: baseOpacity,
         });
       }
     }
@@ -55,41 +64,42 @@ export default function DotDistortionBackground() {
         const dy = d.y - mouse.y;
         const dist = Math.sqrt(dx * dx + dy * dy) || 1;
 
-        const radius = 120;
+        const radius = 100;
         let opacity = d.baseOpacity;
 
         if (dist < radius) {
-          // smooth falloff (shape)
-          const force = (1 - dist / radius) ** 2;
+          // smooth falloff for chewing gum effect
+          const force = Math.pow(1 - dist / radius, 2);
 
-          // physics push
-          d.vx += (dx / dist) * force *2;
-          d.vy += (dy / dist) * force *2;
+          // PULL towards cursor (attraction) - like chewing gum
+          d.vx += (dx / dist ) * 0.5;
+          d.vy += (dy / dist) * 0.5;
 
-          //  zoom effect
+          // zoom effect
           d.size = d.baseSize + force * 3;
           
-          // Dots near cursor get reduced opacity
-          opacity = d.baseOpacity * (0.5 + force * 0.5);
+          // increase opacity when pulled
+          opacity = d.baseOpacity + force * 0.3;
         } else {
-          //  shrink smoothly
-          d.size += (d.baseSize - d.size) * 0.1;
+          // smoothly return to original size when cursor leaves
+          d.size += (d.baseSize - d.size) * 0.08;
+          opacity = d.baseOpacity;
         }
 
-        //  spring back
-        d.vx += (d.ox - d.x) * 0.05;
-        d.vy += (d.oy - d.y) * 0.05;
+        // gentle spring back to original position
+        d.vx += (d.ox - d.x) * 0.06;
+        d.vy += (d.oy - d.y) * 0.06;
 
-        //  friction
-        d.vx *= 0.8;
-        d.vy *= 0.8;
+        // smooth friction for elastic motion
+        d.vx *= 0.88;
+        d.vy *= 0.88;
 
         d.x += d.vx;
         d.y += d.vy;
 
-        //  draw dot with opacity
+        // draw dot
         ctx.beginPath();
-        ctx.arc(d.x, d.y, d.size, 0, Math.PI * 10);
+        ctx.arc(d.x, d.y, d.size, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(0, 0, 0, ${opacity})`;
         ctx.fill();
       });
