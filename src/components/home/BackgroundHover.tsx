@@ -74,15 +74,11 @@ export default function DotDistortionBackground() {
           // PULL towards cursor (attraction) - like chewing gum
           d.vx += (dx / dist ) * 0.5;
           d.vy += (dy / dist) * 0.5;
-
-          // zoom effect
-          d.size = d.baseSize + force * 3;
           
           // increase opacity when pulled
           opacity = d.baseOpacity + force * 0.3;
         } else {
-          // smoothly return to original size when cursor leaves
-          d.size += (d.baseSize - d.size) * 0.08;
+          // return to original opacity when cursor leaves
           opacity = d.baseOpacity;
         }
 
@@ -99,7 +95,7 @@ export default function DotDistortionBackground() {
 
         // draw dot
         ctx.beginPath();
-        ctx.arc(d.x, d.y, d.size, 0, Math.PI * 2);
+        ctx.arc(d.x, d.y, d.baseSize, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(0, 0, 0, ${opacity})`;
         ctx.fill();
       });
