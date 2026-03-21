@@ -71,9 +71,9 @@ export default function DotDistortionBackground() {
           // smooth falloff for chewing gum effect
           const force = Math.pow(1 - dist / radius, 2);
 
-          // PULL towards cursor (attraction) - like chewing gum
-          d.vx += (dx / dist ) * 0.5;
-          d.vy += (dy / dist) * 0.5;
+          // PULL towards cursor (attraction) - like chewing gum - more responsive
+          d.vx += (dx / dist ) * 0.8;
+          d.vy += (dy / dist) * 0.8;
           
           // increase opacity when pulled
           opacity = d.baseOpacity + force * 0.3;
@@ -82,13 +82,13 @@ export default function DotDistortionBackground() {
           opacity = d.baseOpacity;
         }
 
-        // gentle spring back to original position
-        d.vx += (d.ox - d.x) * 0.06;
-        d.vy += (d.oy - d.y) * 0.06;
+        // gentle spring back to original position - stronger for better responsiveness
+        d.vx += (d.ox - d.x) * 0.08;
+        d.vy += (d.oy - d.y) * 0.08;
 
-        // smooth friction for elastic motion
-        d.vx *= 0.88;
-        d.vy *= 0.88;
+        // smooth friction for elastic motion - less friction for snappier response
+        d.vx *= 0.90;
+        d.vy *= 0.90;
 
         d.x += d.vx;
         d.y += d.vy;
