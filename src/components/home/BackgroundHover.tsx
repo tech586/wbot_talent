@@ -10,8 +10,11 @@ export default function DotDistortionBackground() {
     const ctx = canvas.getContext("2d")!;
 
     function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const rect = canvas.parentElement?.getBoundingClientRect();
+      if (rect) {
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+      }
     }
 
     resize();
@@ -97,5 +100,5 @@ export default function DotDistortionBackground() {
     animate();
   }, []);
 
-  return <canvas ref={canvasRef} className="fixed inset-0 -z-10" />;
+  return <canvas ref={canvasRef} className="absolute inset-0 -z-10" />;
 }

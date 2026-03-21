@@ -1,8 +1,8 @@
-import { Space_Grotesk } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
 // 2. KEEP the export name 'interTight' 
 // so your layout.tsx file doesn't break.
-const interTight = Space_Grotesk({
+const interTight = Poppins({
   subsets: ['latin'],
   // 3. KEEP the CSS variable name '--font-interTight' 
   // so your CSS/Tailwind config doesn't need updating.

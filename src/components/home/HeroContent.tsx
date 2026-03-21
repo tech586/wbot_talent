@@ -4,7 +4,7 @@ import NavCTAButton from '../shared/navbar/NavCTAButton';
 
 const HeroContent = () => {
   return (
-    <div className="main-container z-10 flex flex-col items-start text-left">
+    <div className="mt-20 main-container z-10 flex flex-col items-center text-center">
       <RevealAnimation delay={0.1}>
         <span className="px-3 py-1.5 text-[11px] sm:px-4 sm:py-2 sm:text-sm md:px-5 md:py-2 rounded-full font-medium tracking-wide bg-primary-50 text-primary-600 border border-primary-600 text-center mb-5">Build and Manage High Performing Tech Teams Globally</span>
       </RevealAnimation>
@@ -16,13 +16,13 @@ const HeroContent = () => {
         </h1>
       </RevealAnimation>
       <RevealAnimation delay={0.3}>
-        <p className="mb-10 max-w-[625px] max-sm:max-w-[420px] sm:mb-14 text-black dark:text-gray-100">
+        <p className=" mt-15 mb-10 max-w-[625px] max-sm:max-w-[420px] sm:mb-14 text-black dark:text-gray-100">
        Worksbot Talent helps Indian and global companies hire, onboard, and manage skilled technology professionals with end-to-end recruitment, Employer of Record (EOR), payroll management, and workforce support.
        Whether you want to hire Indian tech talent or scale your team quickly, Worksbot Talent simplifies global hiring and workforce management.
 
         </p>
       </RevealAnimation>
-      <ul className="mb-7 flex flex-col gap-4 max-md:w-full md:mb-14 md:flex-row">
+      <ul className="mb-7 flex flex-col gap-4 max-md:w-full md:mb-14 md:flex-row md:justify-center">
         <RevealAnimation delay={0.3} direction="left" offset={50}>
           <li>
             <LinkButton
